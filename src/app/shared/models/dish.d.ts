@@ -1,6 +1,4 @@
-import { Comment } from "./comment";
-
-export interface Dish {
+interface IDish {
     id: string;
     name: string;
     image: string;
@@ -9,5 +7,5 @@ export interface Dish {
     label: string;
     price: string;
     description: string;
-    comments: Comment[];
+    comments: IComment[];
 }
