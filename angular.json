@@ -16,6 +16,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "ru": "src/locale/messages.ru.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -28,8 +34,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/conFusion/assets"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -65,6 +70,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "ru": {
+              "localize": ["ru"]
             }
           },
           "defaultConfiguration": "production"
@@ -77,6 +85,9 @@
             },
             "development": {
               "browserTarget": "conFusion:build:development"
+            },
+            "ru": {
+              "browserTarget": "conFusion:build:development,ru"
             }
           },
           "defaultConfiguration": "development"

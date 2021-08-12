@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1619344176447657437" datatype="html">
+        <source>LIKE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dishdetail/dishdetail.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9219888125536520293" datatype="html">
+        <source>SHARE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dishdetail/dishdetail.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5400665600623890206" datatype="html">
+        <source>COMMENTS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dishdetail/dishdetail.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
