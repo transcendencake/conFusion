@@ -1,10 +1,10 @@
-import { Dish } from "./dish";
+import { getImagePath } from "../utils/assetsUtils";
 
-export const DISHES: Dish[] = [
+const dishes: IDish[] = [
     {
         id: '0',
         name: 'Uthappizza',
-        image: '/conFusion/assets/images/uthappizza.png',
+        image: '/images/uthappizza.png',
         category: 'mains',
         featured: true,
         label: 'Hot',
@@ -47,7 +47,7 @@ export const DISHES: Dish[] = [
     {
         id: '1',
         name: 'Zucchipakoda',
-        image: '/conFusion/assets/images/zucchipakoda.png',
+        image: '/images/zucchipakoda.png',
         category: 'appetizer',
         featured: false,
         label: '',
@@ -89,7 +89,7 @@ export const DISHES: Dish[] = [
     {
         id: '2',
         name: 'Vadonut',
-        image: '/conFusion/assets/images/vadonut.png',
+        image: '/images/vadonut.png',
         category: 'appetizer',
         featured: false,
         label: 'New',
@@ -131,7 +131,7 @@ export const DISHES: Dish[] = [
     {
         id: '3',
         name: 'ElaiCheese Cake',
-        image: '/conFusion/assets/images/elaicheesecake.png',
+        image: '/images/elaicheesecake.png',
         category: 'dessert',
         featured: false,
         label: '',
@@ -171,3 +171,10 @@ export const DISHES: Dish[] = [
         ]
     }
 ];
+
+export const DISHES = dishes.map(dish => {
+    if (dish.image) {
+        dish.image = getImagePath(dish.image);
+    }
+    return dish;
+});
