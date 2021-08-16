@@ -1,3 +1,7 @@
+$hue: 0;
+$saturation: 0%;
+$lightness: 100%;
+
 mat-grid-tile:hover {
-  background-color: hsl(0, 0%, 62%);
+  background-color: hsl($hue + 262, 60% - $saturation, $lightness * 0.75);
 }
