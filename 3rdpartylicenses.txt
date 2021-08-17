@@ -60,9 +60,6 @@ THE SOFTWARE.
 @angular/forms
 MIT
 
-@angular/localize
-MIT
-
 @angular/material
 MIT
 The MIT License
@@ -89,6 +86,12 @@ THE SOFTWARE.
 
 
 @angular/platform-browser
+MIT
+
+@ngx-translate/core
+MIT
+
+@ngx-translate/http-loader
 MIT
 
 hammerjs
