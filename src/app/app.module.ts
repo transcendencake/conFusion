@@ -23,7 +23,7 @@ import { environment } from 'src/environments/environment';
 import { TRANSLATIONS_PATH } from './shared/constants/assetsPaths.constants';
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, `.${environment.assetsUrlBase}${TRANSLATIONS_PATH}/`);
+  return new TranslateHttpLoader(http, `./assets${TRANSLATIONS_PATH}/`);
 }
 
 @NgModule({
