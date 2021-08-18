@@ -8,4 +8,12 @@ export class DishService {
   getDishes(): IDish[] {
     return DISHES;
   }
+
+  getDish(id: string): IDish | undefined {
+    return DISHES.find((p) => p.id === id);
+  }
+  
+  getFeaturedDish(): IDish | undefined {
+    return DISHES.find((p) => p.featured == true);
+  }
 }
