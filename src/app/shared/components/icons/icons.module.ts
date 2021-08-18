@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GooglePlusIcon } from './google-plus-icon.component';
-import { EnvelopeIcon } from './envelope-icon.component';
-import { FacebookIcon } from './facebook-icon.component';
-import { LinkedinIcon } from './linkedin-icon.component';
-import { TwitterIcon } from './twitter-icon.component';
-import { YoutubeIcon } from './youtube-icon.component';
+import { GooglePlusIcon } from './implementations/google-plus-icon.component';
+import { EnvelopeIcon } from './implementations/envelope-icon.component';
+import { FacebookIcon } from './implementations/facebook-icon.component';
+import { LinkedinIcon } from './implementations/linkedin-icon.component';
+import { TwitterIcon } from './implementations/twitter-icon.component';
+import { YoutubeIcon } from './implementations/youtube-icon.component';
+import { AddressCardIcon } from './implementations/address-card-icon.component';
+import { HomeIcon } from './implementations/home-icon.component';
+import { InfoIcon } from './implementations/info-icon.component';
+import { ListIcon } from './implementations/list-icon.component';
 
 
 
@@ -16,7 +20,11 @@ import { YoutubeIcon } from './youtube-icon.component';
     FacebookIcon,
     LinkedinIcon,
     TwitterIcon,
-    YoutubeIcon
+    YoutubeIcon,
+    AddressCardIcon,
+    HomeIcon,
+    InfoIcon,
+    ListIcon
   ],
   imports: [
     CommonModule
@@ -27,7 +35,11 @@ import { YoutubeIcon } from './youtube-icon.component';
     FacebookIcon,
     LinkedinIcon,
     TwitterIcon,
-    YoutubeIcon
+    YoutubeIcon,
+    AddressCardIcon,
+    HomeIcon,
+    InfoIcon,
+    ListIcon
   ]
 })
 export class IconsModule { }
