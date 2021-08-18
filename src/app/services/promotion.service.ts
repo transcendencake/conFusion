@@ -9,11 +9,11 @@ export class PromotionService {
     return PROMOTIONS;
   }
 
-  getPromotion(id: string) {
+  getPromotion(id: string): IPromotion | undefined {
     return PROMOTIONS.find((p) => p.id === id);
   }
   
-  getFeaturedPromotion() {
+  getFeaturedPromotion(): IPromotion | undefined {
     return PROMOTIONS.find((p) => p.featured == true);
   }
 }

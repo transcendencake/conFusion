@@ -1,4 +1,6 @@
-export const PROMOTIONS: IPromotion[] = [
+import { getImagePath } from "../utils/assetsUtils";
+
+const promotions: IPromotion[] = [
   {
     id: '0',
     name: 'Weekend Grand Buffet',
@@ -9,3 +11,10 @@ export const PROMOTIONS: IPromotion[] = [
     description: 'Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person'
   }
 ];
+
+export const PROMOTIONS = promotions.map(promotion => {
+  if (promotion.image) {
+    promotion.image = getImagePath(promotion.image);
+  }
+  return promotion;
+});
