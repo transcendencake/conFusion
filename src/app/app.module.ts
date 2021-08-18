@@ -19,7 +19,6 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { environment } from 'src/environments/environment';
 import { TRANSLATIONS_PATH } from './shared/constants/assetsPaths.constants';
 
 export function HttpLoaderFactory(http: HttpClient) {
