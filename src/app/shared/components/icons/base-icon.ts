@@ -4,10 +4,11 @@ import { Component, Input, OnInit } from "@angular/core";
   templateUrl: './icons.component.html'
 })
 export abstract class BaseIcon implements OnInit {
-  @Input() isLg: any;
+  @Input() isLg? : string;
+
   iconClass: string = '';
+
   ngOnInit(): void {
-    this.isLg = this.isLg !== undefined;
-    this.iconClass = `fa ${this.iconClass} ${this.isLg ? 'fa-lg' : ''}`;
+    this.iconClass = `fa ${this.iconClass} ${this.isLg !== undefined ? 'fa-lg' : ''}`;
   }
 }
