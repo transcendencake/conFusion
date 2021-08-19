@@ -24,6 +24,7 @@ import { IconsModule } from './shared/components/icons/icons.module';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { AddressComponent } from './shared/components/address/address.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, `./assets${TRANSLATIONS_PATH}/`);
@@ -37,7 +38,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    AddressComponent
   ],
   imports: [
     BrowserModule,
