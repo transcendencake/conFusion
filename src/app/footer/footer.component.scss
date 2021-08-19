@@ -1,0 +1,25 @@
+@import '../../colors';
+
+$color-facebook: hsl(221, 44%, 41%);
+$color-google: hsl(7, 71%, 55%);
+$color-youtube: hsl(5, 100%, 61%);
+$color-linkedin: hsl(199, 100%, 36%);
+$color-twitter: hsl(206, 82%, 63%);
+$color-mail: hsl(258, 58%, 42%);
+
+.footer {
+    background-color: $color-background-pale;
+    margin: 0 auto;
+};
+
+.social-buttons {
+    color: $color-white;
+    text-align:center;
+}
+
+.btn-facebook {background-color: $color-facebook}
+.btn-google-plus{background-color: $color-google}
+.btn-youtube{background-color: $color-youtube}
+.btn-linkedin{background-color: $color-linkedin}
+.btn-twitter{background-color: $color-twitter}
+.btn-mail{background-color: $color-mail}
