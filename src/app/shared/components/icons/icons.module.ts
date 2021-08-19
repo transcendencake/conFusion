@@ -14,41 +14,27 @@ import { FaxIcon } from './implementations/fax-icon.component';
 import { PhoneIcon } from './implementations/phone-icon.component';
 import { SkypeIcon } from './implementations/skype-icon.component';
 
-
+const sharedComponents = [
+  GooglePlusIcon,
+  EnvelopeIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  YoutubeIcon,
+  AddressCardIcon,
+  HomeIcon,
+  InfoIcon,
+  ListIcon,
+  FaxIcon,
+  PhoneIcon,
+  SkypeIcon
+];
 
 @NgModule({
-  declarations: [
-    GooglePlusIcon,
-    EnvelopeIcon,
-    FacebookIcon,
-    LinkedinIcon,
-    TwitterIcon,
-    YoutubeIcon,
-    AddressCardIcon,
-    HomeIcon,
-    InfoIcon,
-    ListIcon,
-    FaxIcon,
-    PhoneIcon,
-    SkypeIcon
-  ],
+  declarations: sharedComponents,
   imports: [
     CommonModule
   ],
-  exports: [
-    GooglePlusIcon,
-    EnvelopeIcon,
-    FacebookIcon,
-    LinkedinIcon,
-    TwitterIcon,
-    YoutubeIcon,
-    AddressCardIcon,
-    HomeIcon,
-    InfoIcon,
-    ListIcon,
-    FaxIcon,
-    PhoneIcon,
-    SkypeIcon
-  ]
+  exports: sharedComponents
 })
 export class IconsModule { }
