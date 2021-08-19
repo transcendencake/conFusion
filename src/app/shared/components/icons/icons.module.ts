@@ -10,6 +10,9 @@ import { AddressCardIcon } from './implementations/address-card-icon.component';
 import { HomeIcon } from './implementations/home-icon.component';
 import { InfoIcon } from './implementations/info-icon.component';
 import { ListIcon } from './implementations/list-icon.component';
+import { FaxIcon } from './implementations/fax-icon.component';
+import { PhoneIcon } from './implementations/phone-icon.component';
+import { SkypeIcon } from './implementations/skype-icon.component';
 
 
 
@@ -24,7 +27,10 @@ import { ListIcon } from './implementations/list-icon.component';
     AddressCardIcon,
     HomeIcon,
     InfoIcon,
-    ListIcon
+    ListIcon,
+    FaxIcon,
+    PhoneIcon,
+    SkypeIcon
   ],
   imports: [
     CommonModule
@@ -39,7 +45,10 @@ import { ListIcon } from './implementations/list-icon.component';
     AddressCardIcon,
     HomeIcon,
     InfoIcon,
-    ListIcon
+    ListIcon,
+    FaxIcon,
+    PhoneIcon,
+    SkypeIcon
   ]
 })
 export class IconsModule { }

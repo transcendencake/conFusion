@@ -1,1 +1,38 @@
-<p>contact works!</p>
+<div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+        <h3 translate>CONTACTUS</h3>
+        <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <h3 translate>LOCATIONINF</h3> 
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="50" fxFlexOffset="20px">
+        <h4 translate>OURADR</h4>
+        <address>
+          121, <span translate>CLEARWATERBAY </span> <span translate>ROAD</span>
+          <br> <span translate>CLEARWATERBAY</span>, <span translate>KOWLOON</span>
+          <br> <span translate>HONGKONG</span><br>
+          <app-icon-phone></app-icon-phone> +852 1234 5678<br>
+          <app-icon-fax></app-icon-fax>: +852 8765 4321<br>
+          <app-icon-envelope></app-icon-envelope>:
+            <a href="mailto:confusion@food.net">confusion@food.net</a>
+        </address>
+        <p></p>
+        <div>
+          <a mat-raised-button href="tel:+85212345678"><app-icon-phone></app-icon-phone><span translate> CALL</span></a>
+          <a mat-raised-button><app-icon-skype></app-icon-skype> Skype</a>
+          <a mat-raised-button href="mailto:confusion@food.net"><app-icon-envelope></app-icon-envelope> Email</a>
+        </div>
+        </div>
+      <div fxFlex="40">
+        <h4>...</h4>
+      </div>
+    </div>
+  </div>
+</div>

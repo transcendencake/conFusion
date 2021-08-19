@@ -7,9 +7,12 @@
   "LIKE": "Like",
   "SHARE": "Share",
   "COMMENTS": "Comments",
-  "OURADR": "Our adress",
+  "OURADR": "Our Address",
   "ROAD": "Road",
   "CLEARWATERBAY": "Clear Water Bay" ,
   "KOWLOON": "Kowloon",
-  "HONGKONG": "HONG KONG"
+  "HONGKONG": "HONG KONG",
+  "CONTACTUS": "Contact Us",
+  "LOCATIONINF": "Location Information",
+  "CALL": "Call"
 }
