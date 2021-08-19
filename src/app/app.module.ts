@@ -23,6 +23,7 @@ import { TRANSLATIONS_PATH } from './shared/constants/assetsPaths.constants';
 import { IconsModule } from './shared/components/icons/icons.module';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, `./assets${TRANSLATIONS_PATH}/`);
@@ -35,7 +36,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     DishdetailComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
