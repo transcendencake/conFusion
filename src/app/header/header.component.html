@@ -1,9 +1,9 @@
 <mat-toolbar color="primary">
   <span><img src="/assets/images/logo.png" height=30 width=41></span>
-  <a mat-button href="/home"><app-icon-home isLg></app-icon-home> <span translate> HOME</span></a>
+  <a mat-button routerLink="/home" routerLinkActive="active"><app-icon-home isLg></app-icon-home> <span translate> HOME</span></a>
   <a mat-button><app-icon-info isLg></app-icon-info> <span translate> ABOUT</span></a>
-  <a mat-button href="/menu"><app-icon-list isLg></app-icon-list> <span translate> MENU</span></a>
-  <a mat-button><app-icon-address-card isLg></app-icon-address-card> <span translate> CONTACT</span></a>
+  <a mat-button routerLink="/menu" routerLinkActive="active"><app-icon-list isLg></app-icon-list> <span translate> MENU</span></a>
+  <a mat-button ><app-icon-address-card isLg></app-icon-address-card> <span translate> CONTACT</span></a>
 </mat-toolbar>
 
 <div class="container banner"
