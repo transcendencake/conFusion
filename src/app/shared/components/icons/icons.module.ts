@@ -13,6 +13,7 @@ import { ListIcon } from './implementations/list-icon.component';
 import { FaxIcon } from './implementations/fax-icon.component';
 import { PhoneIcon } from './implementations/phone-icon.component';
 import { SkypeIcon } from './implementations/skype-icon.component';
+import { SignInIcon } from './implementations/sign-in-icon.component';
 
 const sharedComponents = [
   GooglePlusIcon,
@@ -27,7 +28,8 @@ const sharedComponents = [
   ListIcon,
   FaxIcon,
   PhoneIcon,
-  SkypeIcon
+  SkypeIcon,
+  SignInIcon
 ];
 
 @NgModule({
