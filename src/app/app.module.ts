@@ -21,6 +21,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TRANSLATIONS_PATH } from './shared/constants/assetsPaths.constants';
 import { IconsModule } from './shared/components/icons/icons.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { AddressComponent } from './shared/components/address/address.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, `./assets${TRANSLATIONS_PATH}/`);
@@ -32,7 +36,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     MenuComponent,
     DishdetailComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ContactComponent,
+    AddressComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +59,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       },
       defaultLanguage: 'ru'
-    })
+    }),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

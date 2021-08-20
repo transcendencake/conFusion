@@ -19,6 +19,7 @@
                     <p>{{dish.description}}</p>
                 </mat-card-content>
                 <mat-card-actions>
+                    <button mat-button (click)="goBack()">{{'BACK' | translate | uppercase}}</button>
                     <button mat-button>{{'LIKE' | translate | uppercase}}</button>
                     <button mat-button>{{'SHARE' | translate | uppercase}}</button>
                 </mat-card-actions>

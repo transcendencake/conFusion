@@ -1,11 +1,19 @@
 {
   "MENU": "Menu",
+  "HOME": "Home",
+  "ABOUT": "About",
+  "CONTACT": "Contact",
+  "TAGLINE": "We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!",
   "LIKE": "Like",
   "SHARE": "Share",
   "COMMENTS": "Comments",
-  "OURADR": "Our adress",
+  "OURADR": "Our Address",
   "ROAD": "Road",
   "CLEARWATERBAY": "Clear Water Bay" ,
   "KOWLOON": "Kowloon",
-  "HONGKONG": "HONG KONG"
+  "HONGKONG": "HONG KONG",
+  "CONTACTUS": "Contact Us",
+  "LOCATIONINF": "Location Information",
+  "CALL": "Call",
+  "BACK": "Back"
 }

@@ -1,1 +1,24 @@
-<mat-toolbar color="primary"> <span>Ristorante Con Fusion</span> </mat-toolbar>
+<mat-toolbar color="primary">
+  <span><img src="/assets/images/logo.png" height=30 width=41></span>
+  <a mat-button routerLink="/home" routerLinkActive="active"><app-icon-home isLg></app-icon-home> <span translate> HOME</span></a>
+  <a mat-button><app-icon-info isLg></app-icon-info> <span translate> ABOUT</span></a>
+  <a mat-button routerLink="/menu" routerLinkActive="active"><app-icon-list isLg></app-icon-list> <span translate> MENU</span></a>
+  <a mat-button routerLink="/contacts"><app-icon-address-card isLg></app-icon-address-card> <span translate> CONTACT</span></a>
+</mat-toolbar>
+
+<div class="container banner"
+    fxLayout="row"
+    fxLayout.sm="column" 
+    fxLayout.xs="column" 
+    fxLayoutAlign="center center" 
+    fxLayoutGap="10px">
+
+  <div fxFlex
+     fxFlex.gt-sm="50%">
+    <h1>Ristorante Con Fusion</h1>
+    <p translate>TAGLINE</p>
+  </div>
+  <div fxFlex fxFlex.gt-sm="20%">
+    <img src="/assets/images/logo.png" alt="Logo">
+  </div>
+</div>

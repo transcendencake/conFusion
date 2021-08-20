@@ -1,0 +1,29 @@
+<div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+        <h3 translate>CONTACTUS</h3>
+        <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <h3 translate>LOCATIONINF</h3> 
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="50" fxFlexOffset="20px">
+        <app-address></app-address>
+        <p></p>
+        <div>
+          <a mat-raised-button href="tel:+85212345678"><app-icon-phone></app-icon-phone><span translate> CALL</span></a>
+          <a mat-raised-button><app-icon-skype></app-icon-skype> Skype</a>
+          <a mat-raised-button href="mailto:confusion@food.net"><app-icon-envelope></app-icon-envelope> Email</a>
+        </div>
+        </div>
+      <div fxFlex="40">
+        <h4>...</h4>
+      </div>
+    </div>
+  </div>
+</div>
