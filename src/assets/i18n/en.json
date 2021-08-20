@@ -31,5 +31,8 @@
   "PIZZAQUOTE": "You better cut the pizza in four pieces because I'm not hungry enough to eat six.",
   "LOGIN": "Login",
   "CANCEL": "Cancel",
-  "REMEMBER": "Remember Me"
+  "REMEMBER": "Remember Me",
+  "USERNAME": "Username",
+  "PASSWORD": "Password",
+  "REQUIRED": "is required"
 }
