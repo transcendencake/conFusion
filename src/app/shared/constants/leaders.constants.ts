@@ -1,4 +1,6 @@
-export const LEADERS: ILeader[] = [
+import { getImagePath } from "../utils/assetsUtils";
+
+const leaders: ILeader[] = [
   {
     id: '0',
     name: 'Peter Pan',
@@ -36,3 +38,10 @@ export const LEADERS: ILeader[] = [
     description: 'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!'
   }
 ];
+
+export const LEADERS = leaders.map(leader => {
+  if (leader.image) {
+    leader.image = getImagePath(leader.image);
+  }
+  return leader;
+});

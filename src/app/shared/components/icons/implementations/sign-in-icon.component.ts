@@ -3,12 +3,12 @@ import { BaseIcon } from "../base-icon";
 import { TEMPLATE_PATH } from "./icons.const";
 
 @Component({
-  selector: 'app-icon-twitter',
+  selector: 'app-icon-sign-in',
   templateUrl: TEMPLATE_PATH
 })
-export class TwitterIcon extends BaseIcon {
+export class SignInIcon extends BaseIcon {
   constructor() {
     super();
-    this.iconClass = "fa-twitter"
+    this.iconClass = "fa-sign-in"
   }
 }
