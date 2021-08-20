@@ -12,4 +12,8 @@ export class LeaderService {
   getLeader(id: string): ILeader | undefined {
     return LEADERS.find(l => l.id === id);
   }
+
+  getFeaturedLeader(): ILeader | undefined {
+    return LEADERS.find((l) => l.featured == true);
+  }
 }
