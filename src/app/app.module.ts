@@ -7,6 +7,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 
@@ -26,6 +27,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AddressComponent } from './shared/components/address/address.component';
 import { AboutComponent } from './about/about.component';
+import { LoginComponent } from './login/login.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, `./assets${TRANSLATIONS_PATH}/`);
@@ -41,7 +43,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     ContactComponent,
     AddressComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,8 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
       defaultLanguage: 'ru'
     }),
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
